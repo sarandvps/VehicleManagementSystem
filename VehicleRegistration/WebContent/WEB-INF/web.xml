@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>VehicleRegistration</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>Home.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>out</servlet-name>
+    <servlet-class>vehicle.Addvehicle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>out</servlet-name>
+    <url-pattern>/addvehicle</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>dl</servlet-name>
+    <servlet-class>vehicle.DeleteVehicle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dl</servlet-name>
+    <url-pattern>/deletevehicle</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>dp</servlet-name>
+    <servlet-class>vehicle.DisplayVehicle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dp</servlet-name>
+    <url-pattern>/displayvehicle</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>gv</servlet-name>
+    <servlet-class>vehicle.GetValues</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>gv</servlet-name>
+    <url-pattern>/getvalues</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>up</servlet-name>
+    <servlet-class>vehicle.UpdateVehicle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>up</servlet-name>
+    <url-pattern>/updatevehicle</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>dpa</servlet-name>
+    <servlet-class>vehicle.DisplayAll</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dpa</servlet-name>
+    <url-pattern>/displayall</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
